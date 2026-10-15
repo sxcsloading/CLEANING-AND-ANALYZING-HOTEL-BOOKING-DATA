@@ -1,0 +1,4 @@
+﻿deposit_type,n_bookings,n_Check-Out,n_Canceled,n_No-Show,n_Unknown,pct_Check-Out,pct_Canceled,pct_No-Show,pct_Unknown,cancel_rate_pct
+No Deposit,8728,6224,2377,105,22,71.31,27.23,1.2,0.25,28.52
+Non Refund,1259,12,1244,0,3,0.95,98.81,0.0,0.24,99.05
+Refundable,13,8,5,0,0,61.54,38.46,0.0,0.0,38.46

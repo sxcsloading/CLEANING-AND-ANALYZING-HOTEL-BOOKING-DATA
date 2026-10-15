@@ -1,0 +1,23 @@
+﻿issue_id,field,issue,detection_rule,affected_rows,example_row_ids
+I01,booking_id,Extra spaces or lower-case letters,does not match BK + 6 digits,215,R00096; R00110; R00236; R00329; R00406
+I02,23 columns,Exact duplicate rows,duplicated(23 columns) after standardising booking_id,181,R00608; R00887; R00980; R01389; R01466
+I03,several columns,"Empty cell or missing-value code (NULL, N/A, ?, unknown…)",strip() == '' or value in MISSING_TOKENS,307,R00064; R00065; R00097; R00103; R00114
+I04,hotel,"Hotel name written in many ways (City, city hotel…)",not one of the 2 standard labels,221,R00010; R00054; R00055; R00063; R00074
+I05,meal,"Non-standard meal label (bb, B&B, Half Board, Undefined)",not in BB/HB/FB/SC,240,R00017; R00036; R00041; R00074; R00078
+I06,market_segment,Non-standard segment label or Undefined,not one of the 7 standard labels,141,R00070; R00193; R00225; R00292; R00341
+I07,distribution_channel,"Non-standard channel label (ta/to, TA-TO) or Undefined",not one of the 4 standard labels,67,R00020; R00091; R00314; R00496; R00546
+I08,deposit_type,"Non-standard deposit label (Non-Refund, no deposit)",not one of the 3 standard labels,78,R00003; R00220; R00365; R00606; R00722
+I09,customer_type,Non-standard customer label (Transient_Party),not one of the 4 standard labels,81,R00154; R00419; R00459; R00517; R00715
+I10,reservation_status,"Non-standard status label (CHECKOUT, Cancelled, no show)",not one of the 3 labels and not a date,93,R00127; R00129; R00223; R00458; R00476
+I11,reservation_status,Contains a date — value in the wrong column,format YYYY-MM-DD,26,R00141; R00331; R00390; R00499; R00822
+I12,"is_canceled, is_repeated_guest","0/1 flag written as yes/no, True/False, 1.0",not '0' or '1',236,R00037; R00059; R00109; R00125; R00130
+I13,is_canceled,Contradicts reservation_status,"Check-Out but canceled, or Canceled/No-Show but not canceled",41,R00856; R00898; R01069; R01345; R01386
+I14,reserved/assigned_room_type,"Lower case, extra spaces or unknown code (Z, Q, X)",not one of the 12 codes,117,R00033; R00113; R00314; R00341; R00419
+I15,arrival_date,"Not in YYYY-MM-DD form (3 other formats, invalid dates)",does not match \d{4}-\d{2}-\d{2},1970,R00005; R00011; R00014; R00015; R00019
+I16,lead_time,"Written as '45.0', extra spaces, negative, > 800 or unknown",not an integer in 0–800,133,R00157; R00280; R00298; R00405; R00529
+I17,stays_*_nights,"Written as '2.0' or '3 nights', negative or empty",not an integer,120,R00068; R00114; R00153; R00215; R00221
+I18,"adults, children, babies","Written as '2.0', negative, empty or N/A",not an integer,149,R00081; R00085; R00097; R00103; R00121
+I19,adr,"Currency symbol (€, EUR) or decimal comma","contains '€', 'EUR' or ','",121,R00081; R00432; R00549; R00601; R00663
+I20,adr,"Negative or above 1,000 EUR",number < 0 or > 1000,11,R00080; R00277; R00754; R01758; R01916
+I21,country,"Lower case, extra spaces or full country name (prt, Portugal)","does not match ^[A-Z]{2,3}$ and is not missing",220,R00236; R00268; R00273; R00275; R00315
+I22,adr,adr = 0 — rare but VALID (kept),adr == 0,136,R00012; R00070; R00109; R00128; R00160

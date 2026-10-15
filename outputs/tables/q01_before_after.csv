@@ -1,0 +1,13 @@
+﻿metric,before,after,note
+Rows,10325.0,10000.0,Before: input rows · After: bookings (one row per booking_id)
+Distinct booking_id values,10145.0,10000.0,Before: not yet stripped/upper-cased
+Exact duplicate rows (23 columns),180.0,0.0,
+Repeated booking_id (after strip/upper),325.0,0.0,Exact duplicates (B1) + duplicates with differences (B8)
+Missing cells (23 columns),311.0,352.0,Details: outputs/quality_report.csv
+Cells breaking the data rules (23 columns),3955.0,0.0,"Wrong format, unknown label, out of range"
+Missing rate of adr (%),0.24,0.36,Higher because invalid prices -> missing
+Missing rate of arrival_date (%),0.24,0.49,Higher because invalid/out-of-range dates -> missing
+Bookings labelled 'City Hotel',6763.0,6702.0,"Before: exact spelling only, duplicates included"
+Cancellation rate (%),37.24,37.41,"Before: 10120 rows coded '0'/'1', duplicates included"
+Mean ADR (EUR per night),103.41,102.56,"Before: loses '95,50' and '€95.50' but keeps 5400 and negative prices"
+Maximum ADR (EUR per night),5400.0,392.0,"Prices above 1,000 EUR are invalid"

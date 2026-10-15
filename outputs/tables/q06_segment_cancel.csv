@@ -1,0 +1,8 @@
+﻿market_segment,n_bookings,share_pct,n_canceled,cancel_rate_pct,small_sample
+Online TA,4741,47.42,1753,36.98,False
+Offline TA/TO,2012,20.13,683,33.95,False
+Groups,1703,17.04,1054,61.89,False
+Direct,1018,10.18,153,15.03,False
+Corporate,441,4.41,81,18.37,False
+Complementary,61,0.61,10,16.39,True
+Aviation,21,0.21,5,23.81,True

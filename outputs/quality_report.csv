@@ -1,0 +1,47 @@
+﻿column,stage,denominator_rows,missing_count,invalid_count,missing_pct,note
+booking_id,before,10325,0,118,0.0,denominator: raw input rows
+hotel,before,10325,0,195,0.0,denominator: raw input rows
+is_canceled,before,10325,0,205,0.0,denominator: raw input rows
+lead_time,before,10325,10,83,0.1,denominator: raw input rows
+arrival_date,before,10325,25,1978,0.24,denominator: raw input rows
+stays_in_weekend_nights,before,10325,11,51,0.11,denominator: raw input rows
+stays_in_week_nights,before,10325,10,52,0.1,denominator: raw input rows
+adults,before,10325,12,41,0.12,denominator: raw input rows
+children,before,10325,41,51,0.4,denominator: raw input rows
+babies,before,10325,0,5,0.0,denominator: raw input rows
+meal,before,10325,24,240,0.23,denominator: raw input rows
+country,before,10325,127,180,1.23,denominator: raw input rows
+market_segment,before,10325,0,141,0.0,denominator: raw input rows
+distribution_channel,before,10325,0,67,0.0,denominator: raw input rows
+is_repeated_guest,before,10325,0,31,0.0,denominator: raw input rows
+reserved_room_type,before,10325,0,41,0.0,denominator: raw input rows
+assigned_room_type,before,10325,0,36,0.0,denominator: raw input rows
+deposit_type,before,10325,0,78,0.0,denominator: raw input rows
+customer_type,before,10325,0,81,0.0,denominator: raw input rows
+adr,before,10325,25,132,0.24,denominator: raw input rows
+total_of_special_requests,before,10325,0,20,0.0,denominator: raw input rows
+reservation_status,before,10325,0,119,0.0,denominator: raw input rows
+reservation_status_date,before,10325,26,10,0.25,denominator: raw input rows
+booking_id,after,10000,0,0,0.0,denominator: bookings (booking_id)
+hotel,after,10000,0,0,0.0,denominator: bookings (booking_id)
+is_canceled,after,10000,0,0,0.0,denominator: bookings (booking_id)
+lead_time,after,10000,31,0,0.31,denominator: bookings (booking_id)
+arrival_date,after,10000,49,0,0.49,denominator: bookings (booking_id)
+stays_in_weekend_nights,after,10000,20,0,0.2,denominator: bookings (booking_id)
+stays_in_week_nights,after,10000,16,0,0.16,denominator: bookings (booking_id)
+adults,after,10000,12,0,0.12,denominator: bookings (booking_id)
+children,after,10000,30,0,0.3,denominator: bookings (booking_id)
+babies,after,10000,5,0,0.05,denominator: bookings (booking_id)
+meal,after,10000,0,0,0.0,denominator: bookings (booking_id)
+country,after,10000,107,0,1.07,denominator: bookings (booking_id)
+market_segment,after,10000,3,0,0.03,denominator: bookings (booking_id)
+distribution_channel,after,10000,4,0,0.04,denominator: bookings (booking_id)
+is_repeated_guest,after,10000,0,0,0.0,denominator: bookings (booking_id)
+reserved_room_type,after,10000,4,0,0.04,denominator: bookings (booking_id)
+assigned_room_type,after,10000,0,0,0.0,denominator: bookings (booking_id)
+deposit_type,after,10000,0,0,0.0,denominator: bookings (booking_id)
+customer_type,after,10000,0,0,0.0,denominator: bookings (booking_id)
+adr,after,10000,36,0,0.36,denominator: bookings (booking_id)
+total_of_special_requests,after,10000,0,0,0.0,denominator: bookings (booking_id)
+reservation_status,after,10000,25,0,0.25,denominator: bookings (booking_id)
+reservation_status_date,after,10000,10,0,0.1,denominator: bookings (booking_id)
